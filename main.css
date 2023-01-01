@@ -1,0 +1,146 @@
+/* Base */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(208, 97%, 85%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: hsl(244, 4%, 36%);
+}
+
+input,button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    outline: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* LOGIN FORM */
+.login__container{
+        box-shadow: 0 6px 24px rgba(182, 9, 234, .99);
+        height: 100%;
+        /* background: linear-gradient(180deg, #ba5370 ,#f4e2d8); */
+        margin: 120px 80px auto;
+        border-radius: 20px;
+}
+.login__content,
+.login__form,
+.login__inputs{
+    justify-content: center;
+    display: grid;
+}
+
+.login__content{
+    position: relative;
+    height: 100vh;
+    align-items: center;
+}
+
+.login__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.login__form{
+    box-shadow: 0 6px 24px rgba(182, 9, 234, .99);
+        height: 700px;
+        width: 700px;
+        /* background: linear-gradient(180deg, #ba5370 ,#f4e2d8); */
+        /* margin: 10px 8px auto; */
+        border-radius: 20px;
+    position: relative;
+    background-color: hsla(244, 16%, 92%, .6);
+    border: hsla(244, 16%, 92%, .75);
+    margin-inline: 1.5rem;
+    row-gap: 1.25rem;
+    backdrop-filter: blur(10px);
+    padding: 20px 20px;
+    /* padding: 2rem; */
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.login__title{
+    color: hsl(244, 12%, 12%);
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.login__title span{
+    color: hsl(244, 75%, 57%);
+}
+
+.login__description{
+    font-size: 1rem;
+}
+
+.login__inputs{
+    row-gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.login__label{
+    /* display: block; */
+    color: hsl(244, 12%, 12%);
+    font-size: 0.813rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.login__input{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid hsl(244, 12%, 36%);
+    background-color: hsla(244, 16%, 92%, .6);
+    color: hsl(244, 12%, 12%);
+    font-size: .75rem;
+    font-weight: 500;
+    transition: border .4s;
+}
+
+.login__input::placeholder{
+    color: hsl(244, 4%, 36%);
+}
+
+.login__input:focus{
+    border: 2px solid hsl(244, 75%, 57%);
+}
+
+.login__box .login__input{
+    padding-right: 36px;
+}
+
+.registered__button{
+    display: flex;
+}
+
+.reg__button{
+    width: 200px;
+    padding: 14px 2rem;
+    border-radius: 6px;
+    background: linear-gradient(180deg, red, purple);
+    color: #fff;
+    /* font-size: 1rem; */
+    font-weight: 600;
+    box-shadow: 0 6px 24px rgba(182, 9, 234, .99);
+    cursor: pointer;
+}
+
+.already__account{
+    color: hsl(244, 75%, 57%);
+    text-decoration: none;
+    float: right;
+}
+.text-danger{
+    color: red;
+}

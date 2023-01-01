@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDATE BANK REGISTRATION FORM</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="login__content">
+            <img src="img/bg-login.png" alt="login img" class="login__img">
+
+            <form action="#" class="login__form" name="myForm" method="post"  onsubmit="return validation()">
+                <div>
+                    <h1 class="login__title">
+                        <span>WELCOME</span> TO ITW BANK
+                    </h1>
+                    <p class="login__description">
+                        Please Submit Your Details Here To Craete Your Account
+                    </p>
+                </div>
+
+                <div>
+                    <div class="login__inputs">
+                        <div>
+                            <label for="" class="login__label">Name</label>
+                            <input type="text" placeholder="Enter Your Name" class="login__input" id="ip__name">
+                            <span id="username" class="text-danger"></span>
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Create Your Password</label>
+                            <div class="login__box">
+                                <input type="password" placeholder="Enter Your Password" class="login__input" id="input__pass">
+                                <i class="ri-eye-off-fill login__eye" id="input__icon"></i>
+                            </div>
+    
+                            <label for="" class="login__label">Retype Your Password</label>
+                            <div class="login__box">
+                                <input type="password" placeholder="Enter Your Password" class="login__input" id="input__pass">
+                                <i class="ri-eye-off-fill login__eye" id="input__icon"></i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Address</label>
+                            <input type="varchar" placeholder="Enter Your Address" class="login__input">
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Date of Birth</label>
+                            <input type="date" placeholder="Enter Your DOB" class="login__input">
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Email</label>
+                            <input type="email" placeholder="Enter Your Email Address" class="login__input">
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Aadhar Number</label>
+                            <input type="number" placeholder="Enter Your Aadhar Number" class="login__input">
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">UID</label>
+                            <input type="number" placeholder="Enter UID" class="login__input">
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Select Your Gender</label>
+                            <input type="radio" value="male" name="Male" class="login__input"> Male
+                            <input type="radio" value="female" name="Female" class="login__input"> Female
+                            <input type="radio" value="other" name="Other" class="login__input"> Other
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Account Type</label>
+                            <select name="Account" id="account__id" class="login__input">
+                                <option value="Saving">Saving</option>
+                                <option value="Current">Current</option>
+                                <option value="Bussiness">Bussiness</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="" class="login__label">Upload Your ID Proof</label>
+                            <input type="file" placeholder="Upload Your ID Proof" class="login__input">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="registered__button">
+                            <button class="reg__button">Register</button>
+                        </div>
+
+                        <a href="#" target="_blank" class="already__account">Already Have An Account</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LINKING -->
+    <script>
+        function validation(){
+    var name = document.getElementById('ip__name').value
+    if(name == "")
+    {
+        document.getElementById('username').innerHTML = "Please Fill The Name Field";
+        return false;
+    }
+    
+}
+
+    </script>
+</body>
+</html>
